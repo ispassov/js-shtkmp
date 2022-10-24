@@ -1,7 +1,7 @@
 import 'bootstrap/dist/css/bootstrap.min.css'
-import { initializeApp } from 'firebase/app'
-import { getAuth, onAuthStateChanged, signInWithEmailAndPassword, signOut } from 'firebase/auth'
-import { btnTest, inputUsername, inputPassword, btnLogin, btnLogout } from './buttons.js'
+import { initializeApp } from './firebase/app'
+import { getAuth, onAuthStateChanged, signInWithEmailAndPassword, signOut } from './firebase/auth'
+
 /* import * as bootstrap from 'bootstrap'
 import Alert from 'bootstrap/js/dist/alert'
 import { Tooltip, Toast, Popover } from 'bootstrap' */
@@ -18,6 +18,12 @@ const firebaseConfig = {
 
 const app = initializeApp(firebaseConfig)
 const auth = getAuth()
+
+let btnTest = document.querySelector('button')
+let btnLogin = document.querySelector('.login')
+let btnLogout = document.querySelector('.logout')
+let inputUsername = document.querySelector('.username')
+let inputPassword = document.querySelector('.password')
 
 onAuthStateChanged(auth, (user) => {
   if (user) {
