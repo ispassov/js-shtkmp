@@ -6,7 +6,7 @@ import { btnTest, inputUsername, inputPassword, btnLogin, btnLogout } from './bu
 /* import * as bootstrap from 'bootstrap'
 import Alert from 'bootstrap/js/dist/alert'
 import { Tooltip, Toast, Popover } from 'bootstrap' */
-
+test123
 const app = initializeApp(firebaseConfig)
 const auth = getAuth()
 
