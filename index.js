@@ -1,7 +1,7 @@
 import 'bootstrap/dist/css/bootstrap.min.css'
 import { initializeApp } from 'firebase/app'
 import { getAuth, onAuthStateChanged, signInWithEmailAndPassword, signOut } from 'firebase/auth'
-import { firebaseConfig } from './firebase.js'
+import { firebaseConfig } from './firebase-config.js'
 import { btnTest, inputUsername, inputPassword, btnLogin, btnLogout } from './buttons.js'
 /* import * as bootstrap from 'bootstrap'
 import Alert from 'bootstrap/js/dist/alert'
